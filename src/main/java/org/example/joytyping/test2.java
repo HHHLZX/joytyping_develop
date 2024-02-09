@@ -5,7 +5,7 @@ import com.github.strikerx3.jxinput.XInputButtons;
 import com.github.strikerx3.jxinput.XInputComponents;
 import com.github.strikerx3.jxinput.XInputDevice;
 import com.github.strikerx3.jxinput.exceptions.XInputNotLoadedException;
-
+//本软件仅供学习使用，请勿用作商业用途。
 public class test2 {
     public static void main(String[] args) {
         // Retrieve all devices检索所有设备

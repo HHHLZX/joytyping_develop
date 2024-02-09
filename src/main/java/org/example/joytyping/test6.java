@@ -4,7 +4,7 @@ import com.github.strikerx3.jxinput.XInputDevice;
 import com.github.strikerx3.jxinput.enums.XInputButton;
 import com.github.strikerx3.jxinput.exceptions.XInputNotLoadedException;
 import com.github.strikerx3.jxinput.listener.XInputDeviceListener;
-
+//本软件仅供学习使用，请勿用作商业用途。
 public class test6 {
 
     public static void main(String[] args) {

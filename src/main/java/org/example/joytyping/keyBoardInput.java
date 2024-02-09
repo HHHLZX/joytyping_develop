@@ -2,7 +2,7 @@ package org.example.joytyping;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
-
+//本软件仅供学习使用，请勿用作商业用途。
 public class keyBoardInput {
     public static void pressCtrl() {
         try {

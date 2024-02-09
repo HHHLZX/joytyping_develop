@@ -3,7 +3,7 @@ package org.example.joytyping;
 import com.github.strikerx3.jxinput.XInputComponents;
 import com.github.strikerx3.jxinput.XInputDevice;
 import com.github.strikerx3.jxinput.exceptions.XInputNotLoadedException;
-
+//本软件仅供学习使用，请勿用作商业用途。
 public class test7 {
     public static void main(String[] args) {
         // 获取所有的XInput设备

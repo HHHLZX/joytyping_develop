@@ -3,7 +3,7 @@ package org.example.joytyping;
 import com.github.strikerx3.jxinput.XInputDevice;
 import com.github.strikerx3.jxinput.XInputDevice14;
 import com.github.strikerx3.jxinput.XInputLibraryVersion;
-
+//本软件仅供学习使用，请勿用作商业用途。
 public class test3 {
     public static void main(String[] args) {
         // Check if XInput 1.3 is available检查 XInput 1.3 是否可用

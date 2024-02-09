@@ -2,7 +2,7 @@ package org.example.joytyping;
 
 import java.awt.*;
 import static java.lang.Thread.sleep;
-
+//本软件仅供学习使用，请勿用作商业用途。
 public class test10 {
 
     public static void main(String[] args) {

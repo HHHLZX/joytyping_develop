@@ -1,5 +1,5 @@
 //package org.example.joytyping;
-//
+////本软件仅供学习使用，请勿用作商业用途。
 //import com.github.strikerx3.jxinput.XInputAxesDelta;
 //import com.github.strikerx3.jxinput.XInputButtonsDelta;
 //import com.github.strikerx3.jxinput.XInputComponentsDelta;

@@ -11,7 +11,7 @@ import javafx.scene.shape.Circle;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
+//本软件仅供学习使用，请勿用作商业用途。
 public class joyTypingController {
     @FXML
     private Label ListenText;

@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-
+//本软件仅供学习使用，请勿用作商业用途。
 public class joyTypingApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
