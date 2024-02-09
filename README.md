@@ -14,8 +14,14 @@ joytyping bata测试版本说明文档
 ### 1、程序运行
 
 1.克隆项目到本地，运行joyTypingApplication.java文件以启动项目<br/>
-2.配置好Java环境后右键joyTyping.jar运行以启动软件（包为JDK8编译而成）
-
+2.配置好Java环境和javaFX环境后在target-副本文件夹打开运行以下代码以启动软件（包为JDK8 'java version "1.8.0_401"' 编译而成）
+```angular2html
+java -cp 你安装JavaFX的lib文件夹内所有文件;joyTyping-1.0.jar org.example.joytyping.joyTypingApplication
+```
+例如
+```angular2html
+java -cp D:/Software-development/javafx-sdk-21.0.2/lib/*;joyTyping-1.0.jar org.example.joytyping.joyTypingApplication
+```
 ### 2、程序主界面
 
 程序运行后出现以下窗口
