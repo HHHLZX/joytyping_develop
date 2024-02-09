@@ -80,19 +80,6 @@ public class mouseInput {
         }
     }
 
-    public static void mouseMoveRightSlow() {
-        mouseMove(1, 0);
-    }
-    public static void mouseMoveRightLowspeed() {
-        mouseMove(2, 0);
-    }
-    public static void mouseMoveRightModerate() {
-        mouseMove(3, 0);
-    }
-    public static void mouseMoveLeft() {
-        mouseMove(-1, 0);
-    }
-
     public static void mouseMove(int horizontalPixels, int verticalPixels) {
         try {
             Robot robot = new Robot();
