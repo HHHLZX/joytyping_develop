@@ -1,6 +1,5 @@
 joytyping bata测试版本说明文档
 =======
-！！！此文件的图片需要将项目下载到本地后才可看到当中图片！！！
 本项目是为了实现手柄打字（外加了控制鼠标移动的功能
 ）而创作的JavaFX桌面端应用程序，本软件仅能为微软Xbox的手柄提供支持软件。软件开发环境为JDK17，经测试在JDK8下也能正常运行。软件开发使用了 [JXInput](https://github.com/StrikerX3/JXInput)
 项目库特此说明，JXInput需要以下两个[Visual C++ Redistributable Packages for Visual Studio 2017](https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads)
