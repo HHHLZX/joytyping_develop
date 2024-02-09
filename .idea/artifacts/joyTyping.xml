@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="joyTyping">
+    <output-path>$PROJECT_DIR$/out/artifacts/joyTyping</output-path>
+    <root id="root">
+      <element id="archive" name="joyTyping.jar">
+        <element id="module-output" name="joyTyping" />
+      </element>
+    </root>
+  </artifact>
+</component>
