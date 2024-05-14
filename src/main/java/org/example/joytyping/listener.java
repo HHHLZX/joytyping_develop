@@ -5,7 +5,9 @@ import com.github.strikerx3.jxinput.XInputDevice;
 import com.github.strikerx3.jxinput.enums.XInputButton;
 import com.github.strikerx3.jxinput.exceptions.XInputNotLoadedException;
 import com.github.strikerx3.jxinput.listener.XInputDeviceListener;
+
 //本软件仅供学习使用，请勿用作商业用途。
+//
 public class listener extends Thread {
     boolean lefttof = false;
     boolean rightttof = false;
@@ -137,7 +139,7 @@ public class listener extends Thread {
                     }
                     if (button == XInputButton.BACK) {
                         if (pressed) {
-                            if (mousetof == false) {
+                            if (!mousetof) {
                                 mousetof = true;
                             } else {
                                 mousetof = false;
@@ -148,14 +150,14 @@ public class listener extends Thread {
                         }
                     }
                     if (button == XInputButton.LEFT_SHOULDER) {
-                        if (mousetof == true) {
+                        if (mousetof) {
                             if (pressed) {
                                 mouseInput.pressLeft();
                             } else {
                                 mouseInput.releasLeft();
                             }
                         }
-                        if (mousetof == false) {
+                        if (!mousetof) {
                             if (pressed) {
                                 keyBoardInput.pressCtrl();
                             } else {
@@ -164,14 +166,14 @@ public class listener extends Thread {
                         }
                     }
                     if (button == XInputButton.RIGHT_SHOULDER) {
-                        if (mousetof == true) {
+                        if (mousetof) {
                             if (pressed) {
                                 mouseInput.pressRight();
                             } else {
                                 mouseInput.releasRight();
                             }
                         }
-                        if (mousetof == false) {
+                        if (!mousetof) {
                             if (pressed) {
                                 keyBoardInput.pressSpace();
                             } else {
@@ -182,7 +184,7 @@ public class listener extends Thread {
                     if (button == XInputButton.RIGHT_THUMBSTICK) {
                         if (pressed) {
                             System.out.println("右摇杆 button pressed");
-                            if (rightttof == false) {
+                            if (!rightttof) {
                                 rightttof = true;
                             } else {
                                 rightttof = false;
@@ -195,17 +197,17 @@ public class listener extends Thread {
                         }
                     }
                     if (button == XInputButton.LEFT_THUMBSTICK) {
-                        if (mousetof == true) {
+                        if (mousetof) {
                             if (pressed) {
                                 mouseInput.pressMiddle();
                             } else {
                                 mouseInput.releasMiddle();
                             }
                         }
-                        if (mousetof == false) {
+                        if (!mousetof) {
                             if (pressed) {
                                 System.out.println("左摇杆 button pressed");
-                                if (lefttof == false) {
+                                if (!lefttof) {
                                     lefttof = true;
                                 } else {
                                     lefttof = false;
@@ -278,7 +280,7 @@ public class listener extends Thread {
                     }
                 }
                 count++;
-                if (mousetof == true) {
+                if (mousetof) {
                     if (leftThumbY > 0.9) {
                         mouseInput.mouseWheelUp();
                     }
@@ -362,7 +364,7 @@ public class listener extends Thread {
                         mouseInput.mouseMove(0, 30);
                     }
                     if (rightThumbY < -0.9) {
-                        mouseInput.mouseMove(0,45 );
+                        mouseInput.mouseMove(0, 45);
                     }
                     if (rightThumbX > 0.9) {
                         mouseInput.mouseMove(45, 0);
@@ -413,7 +415,7 @@ public class listener extends Thread {
                         mouseInput.mouseMove(-45, 0);
                     }
                 }
-                if (mousetof == false) {
+                if (!mousetof) {
                     //设置震动
                     if (lastleftThumbX != leftThumbX || lastrightThumbX != rightThumbX) {
                         if (leftThumbX * leftThumbX + leftThumbY * leftThumbY > 0.2 || rightThumbX * rightThumbX + rightThumbY * rightThumbY > 0.2) {
@@ -449,7 +451,7 @@ public class listener extends Thread {
                         if (lastleftThumbX * lastleftThumbX + lastleftThumbY * lastleftThumbY < 0.7) {
                             if (leftThumbX * leftThumbX + leftThumbY * leftThumbY > 0.7) {
                                 float tanl = 0;
-                                if (lefttof == false) {
+                                if (!lefttof) {
                                     if (leftThumbY > 0) {
                                         tanl = leftThumbY / leftThumbX;
                                         if (tanl > -0.4816 && tanl < 0.0) {
@@ -499,7 +501,7 @@ public class listener extends Thread {
                                         }
                                     }
                                 }
-                                if (lefttof == true) {
+                                if (lefttof) {
                                     if (leftThumbY > 0) {
                                         tanl = leftThumbY / leftThumbX;
                                         if (tanl > -0.4816 && tanl < 0.0) {
@@ -585,7 +587,7 @@ public class listener extends Thread {
                             if (rightThumbX * rightThumbX + rightThumbY * rightThumbY > 0.7) {
                                 float tanR = 0;
                                 tanR = rightThumbY / rightThumbX;
-                                if (rightttof == false) {
+                                if (!rightttof) {
                                     if (rightThumbY > 0) {
                                         if (tanR > -0.4816 && tanR < 0.0) {
                                             keyBoardInput.pressT();
@@ -633,7 +635,7 @@ public class listener extends Thread {
                                         }
                                     }
                                 }
-                                if (rightttof == true) {
+                                if (rightttof) {
                                     if (rightThumbY > 0) {
                                         if (tanR > -0.4816 && tanR < 0.0) {
                                             keyBoardInput.pressBackquote();
